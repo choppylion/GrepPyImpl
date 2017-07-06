@@ -46,6 +46,7 @@ class ServerConnection:
         self.host = host
         self.user, self.password = self.get_auth_data()
         self.connect()
+        self.login()
 
     def get_auth_data(self):
         """
